@@ -1,0 +1,51 @@
+/* @tailwind directives are valid in Tailwind CSS files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  color: rgb(17 24 39);
+  -webkit-font-smoothing: antialiased;
+}
+
+input, textarea {
+  border-color: rgb(209 213 219);
+}
+input:focus, textarea:focus {
+  --tw-ring-color: rgb(59 130 246);
+  border-color: rgb(59 130 246);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50%));
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+  display: flex;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
+}
+
+/* Masquer la barre de défilement tout en gardant la fonctionnalité */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari and Opera */
+}
