@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expertise - Afri-K Corporation Group</title>
+    <link href="/src/index.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <nav class="bg-white/80 backdrop-blur-md fixed w-full z-50 border-b border-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-20">
+          <div class="flex items-center space-x-3">
+            <img 
+              src="/partners/logo-afrik.png"
+              alt="Afri-K Logo" 
+              class="h-24 w-auto"
+            />
+          </div>
+          
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="/#about" class="text-gray-600 hover:text-[rgba(144,36,53,0.898)] font-medium transition-all hover:scale-105">
+              À Propos
+            </a>
+            <a href="/expertise.html" class="text-gray-600 hover:text-[rgba(144,36,53,0.898)] font-medium transition-all hover:scale-105">
+              Expertise
+            </a>
+            <a href="/#services" class="text-gray-600 hover:text-[rgba(144,36,53,0.898)] font-medium transition-all hover:scale-105">
+              Services
+            </a>
+            <a href="/#contact" 
+               class="bg-gradient-to-r from-[#b70e1b] to-[#240428] text-white px-6 py-3 rounded-full 
+                        font-medium hover:shadow-lg hover:shadow-[#b70e1b]/20 transition-all hover:scale-105">
+              Contact
+            </a>
+          </div>
+
+          <div class="md:hidden flex items-center">
+            <button onclick="toggleMenu()" 
+                    class="text-gray-600 hover:text-[rgba(144,36,53,0.898)] transition-colors">
+              <i data-lucide="menu" class="h-6 w-6"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="mobileMenu" class="hidden md:hidden absolute w-full bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="px-4 pt-2 pb-3 space-y-2">
+          <a href="/#about" class="block px-4 py-3 text-gray-600 hover:text-[rgba(144,36,53,0.898)] hover:bg-gray-50 rounded-lg">
+            À Propos
+          </a>
+          <a href="/expertise.html" class="block px-4 py-3 text-gray-600 hover:text-[rgba(144,36,53,0.898)] hover:bg-gray-50 rounded-lg">
+            Expertise
+          </a>
+          <a href="/#services" class="block px-4 py-3 text-gray-600 hover:text-[rgba(144,36,53,0.898)] hover:bg-gray-50 rounded-lg">
+            Services
+          </a>
+          <a href="/#contact" class="block px-4 py-3 text-gray-600 hover:text-[rgba(144,36,53,0.898)] hover:bg-gray-50 rounded-lg">
+            Contact
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="pt-20">
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-[rgb(39,40,91)] to-[rgba(144,36,53,0.898)] bg-clip-text text-transparent">
+                    Notre Expertise Détaillée
+                </h2>
+
+                <div class="grid grid-cols-1 gap-12">
+                    <!-- Solutions Réseaux -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <h3 class="text-2xl font-bold mb-6 text-[rgb(39,40,91)]">Solutions Réseaux, Télécommunications et Cybersécurité</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-semibold mb-2 text-[rgba(144,36,53,0.898)]">Infrastructure réseau</h4>
+                                <p class="text-gray-600">Conception, déploiement et gestion de LAN, WAN, VLAN, VPN, câblage et fibre optique</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2 text-[rgba(144,36,53,0.898)]">Connectivité et collaboration</h4>
+                                <p class="text-gray-600">WI-FI haut débit, téléphonie IP, VoIP, vidéoconférence et solutions de télécommunications unifiées</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2 text-[rgba(144,36,53,0.898)]">Optimisation des performances</h4>
+                                <p class="text-gray-600">QoS, gestion des performances réseau, déploiement d'applications mobiles et collaboratives</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2 text-[rgba(144,36,53,0.898)]">Sécurité réseau et données</h4>
+                                <p class="text-gray-600">Firewalls, VPN, cryptage, sauvegarde et solutions IAM</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2 text-[rgba(144,36,53,0.898)]">Cybersécurité proactive</h4>
+                                <p class="text-gray-600">Protection contre les menaces, surveillance (SIEM, SOC), gestion des risques et sensibilisation</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2 text-[rgba(144,36,53,0.898)]">Accompagnement global</h4>
+                                <p class="text-gray-600">Audit, conformité et solutions sur mesure pour garantir la performance et la sécurité des systèmes</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Solutions Matérielles -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <h3 class="text-2xl font-bold mb-6 text-[rgb(39,40,91)]">Solutions Matérielles et Équipements Informatiques</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-semibold mb-2 text-[rgba(144,36,53,0.898)]">Réseaux et télécommunications</h4>
+                                <p class="text-gray-600">Switches, routeurs, points d'accès Wi-Fi, modems, téléphones IP, casques audio, et systèmes de vidéoconférence</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2 text-[rgba(144,36,53,0.898)]">Sécurité</h4>
+                                <p class="text-gray-600">Firewalls, systèmes antiviraux, et équipements de gestion des accès sécurisés</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2 text-[rgba(144,36,53,0.898)]">Serveurs et stockage</h4>
+                                <p class="text-gray-600">Serveurs physiques et virtuels, solutions NAS/SAN, stockage cloud et virtualisation</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2 text-[rgba(144,36,53,0.898)]">Postes de travail et périphériques</h4>
+                                <p class="text-gray-600">PC, ordinateurs portables, stations de travail, imprimantes, scanners, projecteurs et écrans haute résolution</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2 text-[rgba(144,36,53,0.898)]">Composants et accessoires</h4>
+                                <p class="text-gray-600">Claviers, souris, cartes graphiques, onduleurs, câbles et autres accessoires indispensables</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2 text-[rgba(144,36,53,0.898)]">Accompagnement personnalisé</h4>
+                                <p class="text-gray-600">Équipements performants, sécurisés et évolutifs pour répondre aux besoins spécifiques des entreprises</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Solutions Logiciels -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <h3 class="text-2xl font-bold mb-6 text-[rgb(39,40,91)]">Solutions Logiciels et Cloud</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-semibold mb-2 text-[rgba(144,36,53,0.898)]">Développement sur mesure</h4>
+                                <p class="text-gray-600">Création d'applications personnalisées (web, mobiles, bureautiques), ERP, CRM et outils de gestion RH ou financière</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2 text-[rgba(144,36,53,0.898)]">Cloud et IA</h4>
+                                <p class="text-gray-600">Applications en Cloud (SaaS, PaaS), solutions d'intelligence artificielle et machine learning</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2 text-[rgba(144,36,53,0.898)]">Gestion et intégration</h4>
+                                <p class="text-gray-600">Bases de données (SQL, NoSQL, Big Data), CMS, gestion documentaire, intranets et intégration de logiciels tiers (SAP, Oracle, Microsoft, Salesforce)</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2 text-[rgba(144,36,53,0.898)]">Collaboration et productivité</h4>
+                                <p class="text-gray-600">Logiciels de gestion de projet, outils collaboratifs et suivi des performances</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2 text-[rgba(144,36,53,0.898)]">Sécurité et maintenance</h4>
+                                <p class="text-gray-600">Logiciels de sécurité (cryptage, gestion des accès), mises à jour, optimisation et support technique</p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2 text-[rgba(144,36,53,0.898)]">Solutions complètes</h4>
+                                <p class="text-gray-600">Accompagnement sur mesure pour garantir performance, évolutivité et protection de vos logiciels et systèmes Cloud</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gradient-to-r from-[#240428] to-[#b70e1b] text-white py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>© 2024 Afri-k Corporation Group. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialiser les icônes Lucide
+        lucide.createIcons();
+
+        // Fonction pour le menu mobile
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const menuIcon = document.querySelector('[data-lucide="menu"]');
+            
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                menuIcon.setAttribute('data-lucide', 'x');
+            } else {
+                menu.classList.add('hidden');
+                menuIcon.setAttribute('data-lucide', 'menu');
+            }
+            lucide.createIcons();
+        }
+    </script>
+</body>
+</html>

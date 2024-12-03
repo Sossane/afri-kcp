@@ -43,21 +43,27 @@ export default function ReseauxSolutions() {
             </h2>
           </div>
 
-          {/* Solutions en blocs alternés */}
           <div className="space-y-16">
             {/* Bloc 1 */}
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="w-full md:w-1/2">
-                <div className="bg-white p-8 rounded-2xl shadow-lg">
-                  <h3 className="text-xl font-semibold mb-4 text-[rgba(144,36,53,0.898)]">
-                    Infrastructure réseau
-                  </h3>
-                  <p className="text-gray-600">
-                    Conception, déploiement et gestion de LAN, WAN, VLAN, VPN, câblage et fibre optique
-                  </p>
+                <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                  <img 
+                    src="/partners/fibre.jpg" 
+                    alt="Infrastructure réseau" 
+                    className="w-full h-[200px] md:hidden object-cover"
+                  />
+                  <div className="p-8">
+                    <h3 className="text-xl font-semibold mb-4 text-[rgba(144,36,53,0.898)]">
+                      Infrastructure réseau
+                    </h3>
+                    <p className="text-gray-600">
+                      Conception, déploiement et gestion de LAN, WAN, VLAN, VPN, câblage et fibre optique
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className="w-full md:w-1/2">
+              <div className="w-1/2 hidden md:block">
                 <img 
                   src="/partners/fibre.jpg" 
                   alt="Infrastructure réseau" 
@@ -69,16 +75,23 @@ export default function ReseauxSolutions() {
             {/* Bloc 2 */}
             <div className="flex flex-col md:flex-row-reverse items-center gap-8">
               <div className="w-full md:w-1/2">
-                <div className="bg-white p-8 rounded-2xl shadow-lg">
-                  <h3 className="text-xl font-semibold mb-4 text-[rgba(144,36,53,0.898)]">
-                    Connectivité et collaboration
-                  </h3>
-                  <p className="text-gray-600">
-                    WI-FI haut débit, téléphonie IP, VoIP, vidéoconférence et solutions de télécommunications unifiées
-                  </p>
+                <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                  <img 
+                    src="/partners/connectivite.png" 
+                    alt="Connectivité" 
+                    className="w-full h-[200px] md:hidden object-cover"
+                  />
+                  <div className="p-8">
+                    <h3 className="text-xl font-semibold mb-4 text-[rgba(144,36,53,0.898)]">
+                      Connectivité et collaboration
+                    </h3>
+                    <p className="text-gray-600">
+                      WI-FI haut débit, téléphonie IP, VoIP, vidéoconférence et solutions de télécommunications unifiées
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className="w-full md:w-1/2">
+              <div className="w-1/2 hidden md:block">
                 <img 
                   src="/partners/connectivite.png" 
                   alt="Connectivité" 
@@ -90,16 +103,23 @@ export default function ReseauxSolutions() {
             {/* Bloc 3 */}
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="w-full md:w-1/2">
-                <div className="bg-white p-8 rounded-2xl shadow-lg">
-                  <h3 className="text-xl font-semibold mb-4 text-[rgba(144,36,53,0.898)]">
-                    Cybersécurité proactive
-                  </h3>
-                  <p className="text-gray-600">
-                    Protection contre les menaces, surveillance (SIEM, SOC), gestion des risques et sensibilisation
-                  </p>
+                <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                  <img 
+                    src="/partners/cybersecuritepro.png" 
+                    alt="Cybersécurité" 
+                    className="w-full h-[200px] md:hidden object-cover"
+                  />
+                  <div className="p-8">
+                    <h3 className="text-xl font-semibold mb-4 text-[rgba(144,36,53,0.898)]">
+                      Cybersécurité proactive
+                    </h3>
+                    <p className="text-gray-600">
+                      Protection contre les menaces, surveillance (SIEM, SOC), gestion des risques et sensibilisation
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className="w-full md:w-1/2">
+              <div className="w-1/2 hidden md:block">
                 <img 
                   src="/partners/cybersecuritepro.png" 
                   alt="Cybersécurité" 
@@ -107,8 +127,6 @@ export default function ReseauxSolutions() {
                 />
               </div>
             </div>
-
-            {/* Continuez le même pattern pour les autres solutions */}
           </div>
         </div>
       </section>
