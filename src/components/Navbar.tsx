@@ -8,9 +8,16 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
 
   const handleNavigation = (path: string) => {
-    navigate(path);
-    window.scrollTo(0, 0);
-    setIsOpen(false);
+    const id = path.split('#')[1];
+    navigate('/');
+    
+    setTimeout(() => {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+      setIsOpen(false);
+    }, 100);
   };
 
   return (
@@ -61,9 +68,12 @@ export default function Navbar() {
                 </div>
               </div>
             </div>
-            <Link to="/#services" className="text-gray-600 hover:text-[rgba(144,36,53,0.898)] font-medium transition-all hover:scale-105">
+            <button 
+              onClick={() => handleNavigation('/#services')} 
+              className="text-gray-600 hover:text-[rgba(144,36,53,0.898)] font-medium transition-all hover:scale-105"
+            >
               Services
-            </Link>
+            </button>
             <a href="#contact" className="text-gray-600 hover:text-[rgba(144,36,53,0.898)] font-medium transition-all hover:scale-105">
               Contact
             </a>
@@ -81,9 +91,12 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden absolute w-full bg-white/80 backdrop-blur-md border-b border-gray-100">
           <div className="px-4 pt-2 pb-3 space-y-2">
-            <a href="#about" className="block px-4 py-3 text-gray-600 hover:text-[rgba(144,36,53,0.898)] hover:bg-gray-50 rounded-lg">
+            <button 
+              onClick={() => handleNavigation('/#about')} 
+              className="block w-full text-left px-4 py-3 text-gray-600 hover:text-[rgba(144,36,53,0.898)] hover:bg-gray-50 rounded-lg"
+            >
               À Propos
-            </a>
+            </button>
             <div className="relative group">
               <a href="/expertise" className="block px-4 py-3 text-gray-600 hover:text-[rgba(144,36,53,0.898)] hover:bg-gray-50 rounded-lg">
                 Expertise
@@ -111,9 +124,12 @@ export default function Navbar() {
                 </div>
               </div>
             </div>
-            <a href="#services" className="block px-4 py-3 text-gray-600 hover:text-[rgba(144,36,53,0.898)] hover:bg-gray-50 rounded-lg">
+            <button 
+              onClick={() => handleNavigation('/#services')} 
+              className="block w-full text-left px-4 py-3 text-gray-600 hover:text-[rgba(144,36,53,0.898)] hover:bg-gray-50 rounded-lg"
+            >
               Services
-            </a>
+            </button>
             <a href="#contact" className="block px-4 py-3 text-gray-600 hover:text-[rgba(144,36,53,0.898)] hover:bg-gray-50 rounded-lg">
               Contact
             </a>
