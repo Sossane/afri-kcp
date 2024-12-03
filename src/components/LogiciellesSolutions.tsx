@@ -43,21 +43,27 @@ export default function LogiciellesSolutions() {
             </h2>
           </div>
 
-          {/* Solutions en blocs alternés */}
           <div className="space-y-16">
             {/* Bloc 1 */}
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="w-full md:w-1/2">
-                <div className="bg-white p-8 rounded-2xl shadow-lg">
-                  <h3 className="text-xl font-semibold mb-4 text-[rgba(144,36,53,0.898)]">
-                    Développement sur mesure
-                  </h3>
-                  <p className="text-gray-600">
-                    Création d'applications personnalisées (web, mobiles, bureautiques), ERP, CRM et outils de gestion RH ou financière
-                  </p>
+                <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                  <img 
+                    src="/partners/dev.jpeg" 
+                    alt="Développement sur mesure" 
+                    className="w-full h-[200px] md:hidden object-cover"
+                  />
+                  <div className="p-8">
+                    <h3 className="text-xl font-semibold mb-4 text-[rgba(144,36,53,0.898)]">
+                      Développement sur mesure
+                    </h3>
+                    <p className="text-gray-600">
+                      Création d'applications personnalisées (web, mobiles, bureautiques), ERP, CRM et outils de gestion RH ou financière
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className="w-full md:w-1/2">
+              <div className="w-1/2 hidden md:block">
                 <img 
                   src="/partners/dev.jpeg" 
                   alt="Développement sur mesure" 
@@ -69,16 +75,23 @@ export default function LogiciellesSolutions() {
             {/* Bloc 2 */}
             <div className="flex flex-col md:flex-row-reverse items-center gap-8">
               <div className="w-full md:w-1/2">
-                <div className="bg-white p-8 rounded-2xl shadow-lg">
-                  <h3 className="text-xl font-semibold mb-4 text-[rgba(144,36,53,0.898)]">
-                    Cloud et IA
-                  </h3>
-                  <p className="text-gray-600">
-                    Applications en Cloud (SaaS, PaaS), solutions d'intelligence artificielle et machine learning
-                  </p>
+                <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                  <img 
+                    src="/partners/cloudia.jpg" 
+                    alt="Cloud et IA" 
+                    className="w-full h-[200px] md:hidden object-cover"
+                  />
+                  <div className="p-8">
+                    <h3 className="text-xl font-semibold mb-4 text-[rgba(144,36,53,0.898)]">
+                      Cloud et IA
+                    </h3>
+                    <p className="text-gray-600">
+                      Applications en Cloud (SaaS, PaaS), solutions d'intelligence artificielle et machine learning
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className="w-full md:w-1/2">
+              <div className="w-1/2 hidden md:block">
                 <img 
                   src="/partners/cloudia.jpg" 
                   alt="Cloud et IA" 
@@ -90,16 +103,23 @@ export default function LogiciellesSolutions() {
             {/* Bloc 3 */}
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="w-full md:w-1/2">
-                <div className="bg-white p-8 rounded-2xl shadow-lg">
-                  <h3 className="text-xl font-semibold mb-4 text-[rgba(144,36,53,0.898)]">
-                    Gestion et intégration
-                  </h3>
-                  <p className="text-gray-600">
-                    Bases de données (SQL, NoSQL, Big Data), CMS, gestion documentaire, intranets et intégration de logiciels tiers
-                  </p>
+                <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                  <img 
+                    src="/partners/basedonne.jpg" 
+                    alt="Gestion et intégration" 
+                    className="w-full h-[200px] md:hidden object-cover"
+                  />
+                  <div className="p-8">
+                    <h3 className="text-xl font-semibold mb-4 text-[rgba(144,36,53,0.898)]">
+                      Gestion et intégration
+                    </h3>
+                    <p className="text-gray-600">
+                      Bases de données (SQL, NoSQL, Big Data), CMS, gestion documentaire, intranets et intégration de logiciels tiers
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className="w-full md:w-1/2">
+              <div className="w-1/2 hidden md:block">
                 <img 
                   src="/partners/basedonne.jpg" 
                   alt="Gestion et intégration" 
@@ -111,16 +131,23 @@ export default function LogiciellesSolutions() {
             {/* Bloc 4 */}
             <div className="flex flex-col md:flex-row-reverse items-center gap-8">
               <div className="w-full md:w-1/2">
-                <div className="bg-white p-8 rounded-2xl shadow-lg">
-                  <h3 className="text-xl font-semibold mb-4 text-[rgba(144,36,53,0.898)]">
-                    Collaboration et productivité
-                  </h3>
-                  <p className="text-gray-600">
-                    Logiciels de gestion de projet, outils collaboratifs et suivi des performances
-                  </p>
+                <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                  <img 
+                    src="/partners/collab.jpg" 
+                    alt="Collaboration" 
+                    className="w-full h-[200px] md:hidden object-cover"
+                  />
+                  <div className="p-8">
+                    <h3 className="text-xl font-semibold mb-4 text-[rgba(144,36,53,0.898)]">
+                      Collaboration et productivité
+                    </h3>
+                    <p className="text-gray-600">
+                      Logiciels de gestion de projet, outils collaboratifs et suivi des performances
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className="w-full md:w-1/2">
+              <div className="w-1/2 hidden md:block">
                 <img 
                   src="/partners/collab.jpg" 
                   alt="Collaboration" 
@@ -132,16 +159,23 @@ export default function LogiciellesSolutions() {
             {/* Bloc 5 */}
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="w-full md:w-1/2">
-                <div className="bg-white p-8 rounded-2xl shadow-lg">
-                  <h3 className="text-xl font-semibold mb-4 text-[rgba(144,36,53,0.898)]">
-                    Sécurité et maintenance
-                  </h3>
-                  <p className="text-gray-600">
-                    Logiciels de sécurité (cryptage, gestion des accès), mises à jour, optimisation et support technique
-                  </p>
+                <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                  <img 
+                    src="/partners/maintenance.jpg" 
+                    alt="Sécurité" 
+                    className="w-full h-[200px] md:hidden object-cover"
+                  />
+                  <div className="p-8">
+                    <h3 className="text-xl font-semibold mb-4 text-[rgba(144,36,53,0.898)]">
+                      Sécurité et maintenance
+                    </h3>
+                    <p className="text-gray-600">
+                      Logiciels de sécurité (cryptage, gestion des accès), mises à jour, optimisation et support technique
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className="w-full md:w-1/2">
+              <div className="w-1/2 hidden md:block">
                 <img 
                   src="/partners/maintenance.jpg" 
                   alt="Sécurité" 
