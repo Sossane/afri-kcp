@@ -20,7 +20,7 @@ export default function MaterielleSolutions() {
         {/* Forme décorative */}
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-white" 
              style={{
-               clipPath: "polygon(0 100%, 100% 100%, 100% 30%, 75% 60%, 50% 30%, 25% 60%, 0 30%)"
+               clipPath: "polygon(0 100%, 100% 100%, 100% 0, 50% 40%, 0 0)"
              }}>
         </div>
 

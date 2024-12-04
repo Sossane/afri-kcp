@@ -24,9 +24,7 @@ export default function Expertise() {
                 Solutions Réseaux, Télécommunications et Cybersécurité
               </h3>
               <p className="text-gray-600 leading-relaxed mb-8 group-hover:text-gray-700 transition-colors duration-300">
-                Nous offrons des services personnalisés en réseaux, télécommunications et cybersécurité 
-                pour optimiser vos infrastructures, protéger vos données sensibles et garantir une communication fluide et fiable.
-                Ces solutions sont essentielles pour assurer la connectivité, la performance et la sécurité des entreprises dans un monde numérique en constante évolution.                
+              Nous proposons des services sur mesure pour optimiser vos infrastructures, sécuriser vos données et garantir une connectivité fiable, alliant performance et protection dans un environnement numérique en évolution.
               </p>
               <a 
                 href="/reseaux-solutions" 
@@ -57,9 +55,8 @@ export default function Expertise() {
                 Solutions Matérielles et Équipements Informatiques
               </h3>
               <p className="text-gray-600 leading-relaxed mb-8 group-hover:text-gray-700 transition-colors duration-300">
-                Nous proposons une large gamme de solutions matérielles et d'équipements informatiques adaptés aux besoins des entreprises, allant des réseaux et télécommunications à la sécurité,
-                ainsi que des solutions de serveurs, stockage, postes de travail, périphériques et accessoires.
-                Nos équipements sont conçus pour être performants, sécurisés et évolutifs, répondant aux exigences spécifiques de chaque entreprise.
+              Nous offrons une gamme complète d'équipements informatiques : réseaux, télécommunications, sécurité, serveurs, stockage, postes de travail, et accessoires.
+              Performants, sécurisés et évolutifs, nos produits s'adaptent aux besoins spécifiques des entreprises.
               </p>
               <a 
                 href="/materielles-solutions" 
@@ -90,9 +87,8 @@ export default function Expertise() {
                 Solutions Logicielles et Cloud
               </h3>
               <p className="text-gray-600 leading-relaxed mb-8 group-hover:text-gray-700 transition-colors duration-300">
-                Notre équipe propose des solutions logicielles et Cloud complètes, adaptées aux besoins spécifiques des entreprises.
-                Cela inclut le développement d'applications personnalisées, des services Cloud et d'intelligence artificielle, ainsi que l'intégration de systèmes et de bases de données.
-                Nous proposons également des outils pour optimiser la collaboration, la productivité, la sécurité et la maintenance de vos infrastructures logicielles.
+              Nous offrons des solutions sur mesure : développement d'applications, services Cloud, IA, intégration de systèmes et bases de données.
+              Nos outils améliorent collaboration, productivité, sécurité et maintenance logicielle.
               </p>
               <a 
                 href="/logicielles-solutions" 

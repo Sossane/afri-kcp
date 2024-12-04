@@ -20,12 +20,28 @@ export default function Navbar() {
     }, 100);
   };
 
+  const handleSolutionClick = (path: string) => {
+    navigate(path);
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 100);
+    setIsOpen(false);
+  };
+  
+
+
   return (
     <nav className="bg-white/80 backdrop-blur-md fixed w-full z-50 border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
           <div className="flex items-center space-x-3">
-            <Link to="/">
+            <Link 
+              to="/" 
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                setIsOpen(false);
+              }}
+            >
               <img 
                 src={logo}
                 alt="Afri-K Logo" 
@@ -42,25 +58,31 @@ export default function Navbar() {
               À Propos
             </button>
             <div className="relative group">
-              <button className="text-gray-600 hover:text-[rgba(144,36,53,0.898)] font-medium transition-all hover:scale-105">
+              <button 
+                onClick={() => handleNavigation('/#expertise')} 
+                className="text-gray-600 hover:text-[rgba(144,36,53,0.898)] font-medium transition-all hover:scale-105"
+              >
                 Expertise
               </button>
               <div className="absolute invisible group-hover:visible opacity-0 group-hover:opacity-100 bg-white shadow-lg mt-2 rounded-lg transition-all duration-300 ease-in-out">
                 <div className="py-1">
                   <Link 
                     to="/reseaux-solutions" 
+                    onClick={() => handleSolutionClick('/reseaux-solutions')}
                     className="block px-4 py-2 text-gray-600 hover:bg-gray-50 hover:text-[rgba(144,36,53,0.898)] transition-colors duration-200"
                   >
                     Solutions Réseaux
                   </Link>
                   <Link 
                     to="/materielles-solutions" 
+                    onClick={() => handleSolutionClick('/materielles-solutions')}
                     className="block px-4 py-2 text-gray-600 hover:bg-gray-50 hover:text-[rgba(144,36,53,0.898)] transition-colors duration-200"
                   >
                     Solutions Matérielles
                   </Link>
                   <Link 
                     to="/logicielles-solutions" 
+                    onClick={() => handleSolutionClick('/logicielles-solutions')}
                     className="block px-4 py-2 text-gray-600 hover:bg-gray-50 hover:text-[rgba(144,36,53,0.898)] transition-colors duration-200"
                   >
                     Solutions Logicielles
@@ -98,25 +120,31 @@ export default function Navbar() {
               À Propos
             </button>
             <div className="relative group">
-              <a href="/expertise" className="block px-4 py-3 text-gray-600 hover:text-[rgba(144,36,53,0.898)] hover:bg-gray-50 rounded-lg">
+              <button 
+                onClick={() => handleNavigation('/#expertise')} 
+                className="block w-full text-left px-4 py-3 text-gray-600 hover:text-[rgba(144,36,53,0.898)] hover:bg-gray-50 rounded-lg"
+              >
                 Expertise
-              </a>
+              </button>
               <div className="absolute invisible group-hover:visible opacity-0 group-hover:opacity-100 bg-white shadow-lg mt-2 rounded-lg transition-all duration-300 ease-in-out">
                 <div className="py-1">
                   <Link 
                     to="/reseaux-solutions" 
+                    onClick={() => handleSolutionClick('/reseaux-solutions')}
                     className="block px-4 py-2 text-gray-600 hover:bg-gray-50 hover:text-[rgba(144,36,53,0.898)] transition-colors duration-200"
                   >
                     Solutions Réseaux
                   </Link>
                   <Link 
                     to="/materielles-solutions" 
+                    onClick={() => handleSolutionClick('/materielles-solutions')}
                     className="block px-4 py-2 text-gray-600 hover:bg-gray-50 hover:text-[rgba(144,36,53,0.898)] transition-colors duration-200"
                   >
                     Solutions Matérielles
                   </Link>
                   <Link 
                     to="/logicielles-solutions" 
+                    onClick={() => handleSolutionClick('/logicielles-solutions')}
                     className="block px-4 py-2 text-gray-600 hover:bg-gray-50 hover:text-[rgba(144,36,53,0.898)] transition-colors duration-200"
                   >
                     Solutions Logicielles
