@@ -31,6 +31,9 @@ export default function Partners() {
         </h2>
 
         <div className="relative overflow-hidden mt-8">
+          <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white to-transparent z-10"></div>
+          <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white to-transparent z-10"></div>
+
           <div className="flex space-x-12 animate-scroll py-8">
             {[...partners, ...partners].map((partner, index) => (
               <div

@@ -9,7 +9,7 @@ export default function LogiciellesSolutions() {
       <Navbar />
       
       {/* Hero Section avec image de fond et forme décorative */}
-      <div className="relative min-h-[90vh] flex items-center">
+      <div className="relative min-h-[70vh] flex items-center">
         <img
           src="/partners/cloud0.jpg"
           alt="Logiciels Background"
@@ -18,7 +18,7 @@ export default function LogiciellesSolutions() {
         <div className="absolute inset-0 bg-gradient-to-br from-[#240428]/60 via-[#b70e1b]/60 to-[#b70d1d]/60 backdrop-blur-[1px]"></div>
         
         {/* Forme décorative */}
-        <div className="absolute bottom-0 left-0 right-0 h-40 bg-white"
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-white -mb-1"
              style={{
                clipPath: "polygon(0 100%, 100% 100%, 100% 0, 50% 40%, 0 0)"
              }}>

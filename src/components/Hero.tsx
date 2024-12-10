@@ -16,7 +16,7 @@ export default function Hero() {
         <div className="space-y-8">
           <h1 className="text-5xl md:text-7xl font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-[rgba(255,255,255,0.8)]">
-              Transformez Votre Avenir Numérique
+              Transformez votre avenir numérique
             </span>
           </h1>
           
